@@ -39,7 +39,7 @@
 
 body {
 color: white;
-font-family: verdana
+font-family: verdana;
 }
 html {
 scroll-behavior: smooth;
@@ -153,7 +153,7 @@ display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 1; /* Sit on top */
 padding-top: 179px; /* Location of the box */
-padding-right: 370px;
+padding-right: 500px;
 left: 0;
 top: 0;
 width: 100%; /* Full width */
@@ -164,7 +164,7 @@ background-color: rgba(0,0,0,0.0001); /* Black w/ opacity */
 }
 
 /* Modal Content */
-.modal-content {
+.modalContent {
 border-radius: 15px;
 border: 2px solid #000000;
 background-color: #fefefe;
