@@ -225,31 +225,6 @@ function App() {
 
 
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("profile1");
-var span = document.getElementById("close1");
-
-btn.onclick = function() {
-  modal.style.display = "block";
-  btn.style.backgroundColor = "#ffe1b4";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-  btn.style.backgroundColor = "#E8E8E8";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    btn.style.backgroundColor = "#E8E8E8";
-  }
-}
-</script>
-
-
 
 
     </body>
