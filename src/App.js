@@ -50,7 +50,7 @@ function App() {
 
 <div style = {{marginLeft: 73.5 + 'em'}}>
 <div class = "rcorners1">
-  <div id = "profile1" class = "rcorners2">
+  <div id = "profile1" class = "rcorners2" onClick = {btn1}>
     <div class = "row">
       <div class = "column1">
         <div style = {{marginLeft: .75 + 'em'}}>
@@ -155,11 +155,12 @@ function App() {
 <div id = "myModal" class="modal">
 
 
-<div class="modal-content">
+<div class="modalContent">
   <div style = {{marginLeft: 50 + 'em'}}>
-  <div id = "close1" class="close">&times;</div>
+  <div id = "close1" class="close" onClick = {span1}>&times;</div>
 </div>
   <p>Chatting with John Doe</p>
+  <p></p>
   <p></p>
   <p></p>
   <p></p>
@@ -232,6 +233,31 @@ function App() {
     </div>
 
   );
+}
+
+var span = document.getElementById("close1");
+
+function btn1() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+  var btn = document.getElementById("profile1");
+  btn.style.backgroundColor = "#ffe1b4";
+}
+
+function span1() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+  var btn = document.getElementById("profile1");
+  btn.style.backgroundColor = "#E8E8E8";
+}
+
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("profile1");
+  if (event.target == modal) {
+    modal.style.display = "none";
+    btn.style.backgroundColor = "#E8E8E8";
+  }
 }
 
 export default App;
